@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+</head>
+<style>
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+  
+}
+
+.box {
+        background-color:black;
+        display: flex;
+        flex-wrap: wrap;
+       
+
+    }
+.mx-10{
+ margin: 5%;
+ margin-top: 0;
+ margin-bottom: 0;
+}
+.col{
+    height: 100px;
+    min-width: 100%;
+    border: 2px solid pink;
+}
+   
+@media( min-width : 340px){
+   .xsm-box{
+    background-color: yellow;
+   }
+   .col{
+    min-width: 100%;
+   }
+}
+@media( min-width : 680px){
+   .sm-box{
+    background-color: blue;
+   } 
+   .col {
+       min-width: 100%;
+       
+
+    }
+}
+@media( min-width : 768px){
+    .md-box{
+        background-color: darkgreen;
+    }
+    .col {
+        
+        min-width: 49%;
+    }
+   
+}
+@media( min-width : 1024px){
+   .lg-box{
+    background-color: red;
+   }
+   .col {
+       min-width:33.3%;
+    }
+   
+}
+
+
+/* hot module realod  */
+</style>
+<body>
+    
+    <div class="box xsm-box sm-box md-box lg-box mx-10 " >
+
+      <div class="col "></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+
+
+
+
+    </div>
+    
+</body>
+</html>
