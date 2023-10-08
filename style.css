@@ -65,9 +65,10 @@
 }
 .images1-container{
     display: flex;
+    flex-wrap: wrap;
     justify-content:space-around;
-    width:1190px ;
-    height:100vh;
+    width:100% ;
+    height:auto;
     gap: 3rem;
     align-items: center;
     font-family: sans-serif;
@@ -95,7 +96,7 @@
 
 .pics{
     flex: 1;
-    max-width:600px;
+    min-width:32%;
     padding: 30px;
     border-radius: 5px;
     text-align: center;
@@ -113,29 +114,25 @@
 }
 .image2-container {
     position: relative;
-    display: inline-block;
 
 }
 .star{
-    width: 1190px;
+    width: 100%;
     height: 300px;
 }
 
 .objects2-container{
     position: relative;
     background-color:whitesmoke;
-    width:1190px;
+    width:100%;
     height:800px ;
 }
 .heading2{
-    position:absolute;
     text-align: center;
     color:rgb(69, 66, 66);
     font-size: 20px;
     font-family: Arial;
     font-weight: bold;
-    top:3%;
-    left: 42%;
     border-bottom: 1px solid rgb(141, 137, 137);
     padding-bottom: 20px;
 }
@@ -143,11 +140,11 @@
 .images2-container{
     margin-left:10% ;
     margin-right: 10%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
     justify-content:space-around;
-    height:400px;
+    width: 100%;
+    height:auto;
     align-items: center;
     font-family: sans-serif; 
 
@@ -156,7 +153,7 @@
     background-color: white;
     border-radius: 5px;
     text-align: center;
-    width: 100% ;
+    min-width: 15% ;
     margin-top: 100px;
     height: fit-content;
 }
@@ -166,8 +163,8 @@
     font-family: Arial, sans-serif;
 }
 .books{
-    width: 250px ;
-    height: 200px;
+    width: 200px ;
+    height: 150px;
 }
 
 .portfolio{
@@ -181,26 +178,24 @@
     color:white;
 }
 .brands-container{
-        position: relative;
         background-color:white;
-        width:1190px;
-        height:250px ;
+        width:100%;
+        height:auto ;
 }
 .heading3{
-    position:absolute;
     text-align: center;
     color:rgb(56, 55, 55);
     font-size: 20px;
     font-family: Arial;
     font-weight: bold;
-    top:3%;
-    left: 45%;
     border-bottom: 1px solid rgb(141, 137, 137);
     padding-bottom: 20px;
 }
 .images3-container{
     display: flex;
+    flex-wrap: wrap;
     justify-content:space-around;
+    width: 100%;
     height: 50vh;
     gap: 5px;
     align-items: center;
@@ -208,8 +203,8 @@
 }
 .pics3{
     flex: 1;
-    max-width:300px;
-    padding: 10px;
+    min-width:24%;
+    padding: 7px;
     background-color: white;
     border-radius: 5px;
     text-align: center;
@@ -217,34 +212,29 @@
   
 }
 .workprocess{
-    position: relative;
     background-color: rgb(67, 63, 63);
-    width:1190px;
-    height:300px ;
+    width:100%;
+    height:250px;
 
 }
 .heading4{
-    position: absolute;
     text-align: center;
     color: white;
     font-size: 1em;
     font-weight: bold;
     font-family: sans-serif;
-    margin-left: 145px;
-    margin-top: 50px;
-    padding-bottom: 5px;
+    margin-top:3%;
 
 }
 .content2{
     color: white;
     font-family: sans-serif;
-    width: 700px;
-    height: 10px;
+    width:65%;
     text-align: left;
-    margin-left: 150px;
-    margin-top:50px;
+    margin-top: 4%;
+    margin-left:10%;
 }
- @media only screen and (max-width: 600px) {
+ @media  (max-width: 680px) {
     
     .darknight {
         width: 100%;
@@ -263,19 +253,15 @@
         left: 50%;
         transform: translateX(-50%);
     }
-    .images1-container{
-        display: block;
-        width: 100%;
-        text-align:center;
+    .pics{
+        min-width: 100%;
     }
-    .images2-container{
-        display: block;
-        width: 100%;
-        text-align:center;
+
+    .pics2{
+        min-width:40%;
     }
-    .images3-container{
-        display: block;
-        width: 100%;
+    .pics3{
+         min-width:45%;
         text-align:center;
     }
     .star{
@@ -288,36 +274,12 @@
     }
 
     .portfolio {
-        left: 50%;
+        left: 45%;
         transform: translateX(-50%);
     }
 
-    .images2-container {
-        grid-template-columns: 1fr;
-    }
 }
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
 
-    .darknight {
-        width: 100%;
-        height: auto;
-    }
-    .star {
-        width: 100%;
-        height: auto;
-    }
-
-    .overlay-text {
-        font-size: 1.2rem;
-        padding: 20px;
-        margin-top: 90px;
-    }
-
-    .learn {
-        left: 50%;
-        transform: translateX(-50%);
-    }
-}
 
 
 
